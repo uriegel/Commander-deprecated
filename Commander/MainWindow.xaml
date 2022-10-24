@@ -1,0 +1,76 @@
+﻿<Window x:Class="Commander.MainWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:local="clr-namespace:Commander"
+                  Title="Captain Kirk" Height="350" Width="525"
+                Icon="Kirk.ico"
+                Loaded="Window_Loaded"
+                Closing="Window_Closing" >
+    <Window.DataContext>
+        <local:CommanderContext />
+    </Window.DataContext>
+    <DockPanel>
+        <Menu IsMainMenu="True"
+              DockPanel.Dock="Top">
+            <MenuItem Header="_Datei">
+                <!--<MenuItem Header="_Umbenennen"
+                          Command="{Binding Rename}"
+                          InputGestureText="F2" />-->
+                <MenuItem Header="_Kopieren"
+                          Command="{Binding Copy}"
+                          InputGestureText="F5" />
+                <MenuItem Header="_Verschieben"
+                          Command="{Binding Move}"
+                          InputGestureText="F6" />
+                <MenuItem Header="_Löschen"
+                          Command="{Binding Delete}"
+                          InputGestureText="Entf" />
+                <Separator />
+                <!--<MenuItem Header="_Favorit übernehmen"
+                          Command="{Binding AddToFavorites}"
+                          InputGestureText="STRG+F1" />
+                <Separator />-->
+                <!--<MenuItem Header="_Eigenschaften"
+                          Command="{Binding ShowProperties}"
+                          InputGestureText="ALT+ENTER" />
+                <Separator />-->
+                <!--<MenuItem Header="_Neu"
+                          Command="local:MainWindow.NewItemCommand"
+                          InputGestureText="Strg+N" />
+                <Separator />-->
+                <MenuItem Header="_Beenden"
+                          Click="Exit_Click"
+                          InputGestureText="ALT+F4" />
+            </MenuItem>
+            <MenuItem Header="_Navigation">
+                <MenuItem Header="_Erstes Element"
+                          InputGestureText="Pos1" />
+                <MenuItem Header="_Favoriten"
+                          InputGestureText="F1" />
+            </MenuItem>
+            <MenuItem Header="_Selektion">
+                <MenuItem Header="_Alles"
+                          InputGestureText="NUM +" />
+                <MenuItem Header="_Nichts"
+                          InputGestureText="NUM -" />
+            </MenuItem>
+            <MenuItem Header="_Ansicht">
+                <MenuItem Header="_Versteckte Dateien"
+                          IsCheckable="True"
+                          IsChecked="{Binding ShowHidden}"/>
+                <Separator />
+                <MenuItem Header="Ansicht _speichern"
+                          InputGestureText="Strg-S" />
+                <MenuItem Header="Ansicht _wählen"
+                          InputGestureText="Strg-TAB" />
+                <MenuItem Header="Ansicht _löschen"
+                          InputGestureText="Strg-F4" />
+                <!--<MenuItem Header="_Mehrfach umbenennen"
+                          Command="local:MainWindow.RenameFilesChangePrefixCommand"
+                          InputGestureText="STRG+F2" />-->
+            </MenuItem>
+        </Menu>
+        <WebBrowser Name="webbie">
+        </WebBrowser> 
+    </DockPanel>
+</Window>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <webroot Path="C:\Users\uwe\Projekte\webroot" />
+  <php Path="C:\Program Files\wamp\bin\php\php5.5.12\php-cgi.exe" />
+  <Tls IsEnabled="false" />
+  <Extensions>
+    <Extension Name="Commander" Type="Commander.Extension" Path="C:\Users\uwe\Projekte\HttpServer\Commander\bin\Debug\Commander.dll" />
+    <Extension Name="mgb" Type="MightyGumBall.Extension" Path="C:\Users\uwe\Projekte\HttpServer\MightyGumBall\bin\Debug\MightyGumBall.dll" />
+    <Extension Name="Upload" Type="Uploader.Extension" Path="C:\Users\uwe\Projekte\HttpServer\Uploader\bin\Debug\Uploader.dll" />
+  </Extensions>
+  <appcaches>
+    <appcache Name="commander\index.appcache" />
+  </appcaches>
+</Config>

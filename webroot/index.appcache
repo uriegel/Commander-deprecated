@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# 2015-04-14:v6
+
+CACHE:
+index.html
+styles/index.css
+styles/scrollbar.css
+scripts/columnscontrol.js
+scripts/commanderview.js
+scripts/grid.js
+scripts/index.js
+scripts/itemscollection.js
+scripts/scrollbar.js
+scripts/tableview.js
+scripts/libs/jquery-2.1.3.min.js
+images/kirk.ico
+images/drive.png
+images/fault.png
+images/folder.png
+images/parentfolder.png
+
+NETWORK:
+*
+http://*

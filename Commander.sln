@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commander", "Commander\Commander.csproj", "{723522EA-8B98-482F-B9CD-8528B8899B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpServer", "HttpServer\HttpServer.csproj", "{B0AC89AE-B563-4448-930C-46FC818E727C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webroot", "webroot", "{41C60DBC-5DA6-45E7-BEBD-5BA8B8A9D151}"
+	ProjectSection(SolutionItems) = preProject
+		webroot\index.appcache = webroot\index.appcache
+		webroot\index.html = webroot\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{A7B6F121-E603-4C1F-8937-6DA05BDE6E89}"
+	ProjectSection(SolutionItems) = preProject
+		webroot\images\drive.png = webroot\images\drive.png
+		webroot\images\fault.png = webroot\images\fault.png
+		webroot\images\folder.png = webroot\images\folder.png
+		webroot\images\Kirk.ico = webroot\images\Kirk.ico
+		webroot\images\parentfolder.png = webroot\images\parentfolder.png
+		webroot\images\Service.png = webroot\images\Service.png
+		webroot\images\ServiceStopped.png = webroot\images\ServiceStopped.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{6D7DDB96-C83F-4C06-A477-B23D1B8698A7}"
+	ProjectSection(SolutionItems) = preProject
+		webroot\scripts\columnscontrol.js = webroot\scripts\columnscontrol.js
+		webroot\scripts\commanderview.js = webroot\scripts\commanderview.js
+		webroot\scripts\conflictcollection.js = webroot\scripts\conflictcollection.js
+		webroot\scripts\dialog.js = webroot\scripts\dialog.js
+		webroot\scripts\grid.js = webroot\scripts\grid.js
+		webroot\scripts\index.js = webroot\scripts\index.js
+		webroot\scripts\itemscollection.js = webroot\scripts\itemscollection.js
+		webroot\scripts\scrollbar.js = webroot\scripts\scrollbar.js
+		webroot\scripts\tableview.js = webroot\scripts\tableview.js
+		webroot\scripts\viewcollection.js = webroot\scripts\viewcollection.js
+		webroot\scripts\viewswitcher.js = webroot\scripts\viewswitcher.js
+		webroot\scripts\waitingitem.js = webroot\scripts\waitingitem.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{A95C5D1B-4234-4550-A756-76FFB7147728}"
+	ProjectSection(SolutionItems) = preProject
+		webroot\scripts\libs\colResizable-1.5.min.js = webroot\scripts\libs\colResizable-1.5.min.js
+		webroot\scripts\libs\jquery-2.1.3.min.js = webroot\scripts\libs\jquery-2.1.3.min.js
+		webroot\scripts\libs\jquery-2.1.3.min.map = webroot\scripts\libs\jquery-2.1.3.min.map
+		webroot\scripts\libs\spin.min.js = webroot\scripts\libs\spin.min.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{70FE3C89-36BA-4FC7-9B30-700052B81AB4}"
+	ProjectSection(SolutionItems) = preProject
+		webroot\styles\index.css = webroot\styles\index.css
+		webroot\styles\scrollbar.css = webroot\styles\scrollbar.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{723522EA-8B98-482F-B9CD-8528B8899B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723522EA-8B98-482F-B9CD-8528B8899B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723522EA-8B98-482F-B9CD-8528B8899B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723522EA-8B98-482F-B9CD-8528B8899B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0AC89AE-B563-4448-930C-46FC818E727C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AC89AE-B563-4448-930C-46FC818E727C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AC89AE-B563-4448-930C-46FC818E727C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AC89AE-B563-4448-930C-46FC818E727C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7B6F121-E603-4C1F-8937-6DA05BDE6E89} = {41C60DBC-5DA6-45E7-BEBD-5BA8B8A9D151}
+		{6D7DDB96-C83F-4C06-A477-B23D1B8698A7} = {41C60DBC-5DA6-45E7-BEBD-5BA8B8A9D151}
+		{A95C5D1B-4234-4550-A756-76FFB7147728} = {6D7DDB96-C83F-4C06-A477-B23D1B8698A7}
+		{70FE3C89-36BA-4FC7-9B30-700052B81AB4} = {41C60DBC-5DA6-45E7-BEBD-5BA8B8A9D151}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB6B8450-5207-41D8-9D44-818B02244CAC}
+	EndGlobalSection
+EndGlobal

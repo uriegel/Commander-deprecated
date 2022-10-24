@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="de">
+        <title>Commander</title>
+        <link href="images/kirk.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/scrollbar.css">
+        <script src="scripts/libs/jquery-2.1.3.min.js"></script>
+        <script src="scripts/libs/spin.min.js"></script>
+        <script src="scripts/columnscontrol.js"></script>
+        <script src="scripts/scrollbar.js"></script>
+        <script src="scripts/tableview.js"></script>
+        <script src="scripts/itemscollection.js"></script>
+        <script src="scripts/conflictcollection.js"></script>
+        <script src="scripts/viewcollection.js"></script>
+        <script src="scripts/commanderview.js"></script>
+        <script src="scripts/grid.js"></script>
+        <script src="scripts/waitingitem.js"></script>
+        <script src="scripts/dialog.js"></script>
+        <script src="scripts/viewswitcher.js"></script>
+        <script src="scripts/index.js"></script>
+    </head>
+    <body> 
+        <div id="commanderLeft" class="CommanderView">
+            <input class="directory">
+            <div id="tableViewLeft" class="tableView" data-width="350" data-height="400">
+            </div>
+            <input class="restrict">
+        </div>
+
+        <div id="commanderRight" class="CommanderView">
+            <input class="directory">
+            <div id="tableViewRight" class="tableView" data-width="350" data-height="400">
+            </div>
+            <input class="restrict">
+        </div>
+
+        <div id="grid" data-width="1">
+            <div id="gripheader">
+                <div id="whiteline"></div>
+            </div>
+            <div id="line"></div>
+        </div>
+        <footer id="footer">Nichts selektiert</footer>
+        
+        <div id="shader"></div>
+        
+        <div id="templates">
+            <table>
+                <tr class="item" tabindex="0">
+                    <td class="name"><div class="iconName"><img class="image" src="" alt="" onerror="this.src='images/fault.png'"><span id="name"></span></div></td>    
+                    <td id="extension"></td>    
+                    <td id="size" class="size"></td>    
+                    <td id="time"></td>    
+                    <td id="version"></td>    
+                    <td></td>    
+                </tr>
+            </table>
+
+            <table>
+                <tr class="serviceItem" tabindex="0">
+                    <td class="name"><div class="iconName"><img class="image" src="" alt="" onerror="this.src='images/fault.png'"><span id="name"></span></div></td>    
+                    <td id="status"></td>    
+                    <td id="startType"></td>    
+                </tr>
+            </table>
+
+            <table>
+                <tr class="conflictitem" tabindex="0">
+                    <td class="name"><div class="iconName"><img class="image" src="" alt="" onerror="this.src='images/fault.png'"><span id="name"></span></div></td>    
+                    <td class="size">
+                        <span id="sourcesize"></span><br>
+                        <span id="targetsize"></span>
+                    </td>    
+                    <td>
+                        <span id="sourceTime"></span><br>
+                        <span id="targetTime"></span>
+                    </td>    
+                    <td>
+                        <span id="sourceVersion"></span><br>
+                        <span id="targetVersion"></span>
+                    </td>    
+                </tr>
+            </table>
+
+            <table>
+                <tr class="viewitem" tabindex="0">
+                    <td id="left"></td>   
+                    <td id="right"></td>   
+                </tr>
+            </table>
+        </div>    
+    </body>
+</html>
